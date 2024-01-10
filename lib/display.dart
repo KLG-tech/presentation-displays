@@ -5,11 +5,12 @@ Display displayFromJson(Map<String, dynamic> json) => Display(
     rotation: json['rotation']);
 
 /// for release please check response from invokeMethod
-Display displayReleaseFromJson(Map<String, dynamic> json) => Display(
-    displayId: json['a'],
-    flag: json['b'],
-    name: json['d'],
-    rotation: json['c']);
+/// commented because using @Keep annotation in DisplayJson in android src
+// Display displayReleaseFromJson(Map<String, dynamic> json) => Display(
+//     displayId: json['a'],
+//     flag: json['b'],
+//     name: json['d'],
+//     rotation: json['c']);
 
 /// The default Display id, which is the id of the built-in primary display
 /// assuming there is one.
